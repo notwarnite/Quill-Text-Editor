@@ -1,0 +1,74 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* light gray background */
+  color: #212529; /* black text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content at the top */
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-color: #1a73e8; /* Google Docs header color */
+  color: #fff; /* white text color */
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 800px; /* Set a maximum width for the content */
+}
+
+.card {
+  background-color: #fff; /* white card background */
+  border: 1px solid #dfe1e5; /* Google Docs border color */
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(60, 64, 67, 0.1), 0 1px 3px rgba(60, 64, 67, 0.1);
+}
+
+.card h2 {
+  color: #1a73e8; /* Google Docs primary color for headings */
+}
+
+.card button {
+  background-color: #1a73e8; /* Google Docs primary button color */
+  color: #fff; /* white text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background-color: #1558a6; /* Darker color on hover */
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #1a73e8; /* Google Docs link color */
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}

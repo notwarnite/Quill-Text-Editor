@@ -1,6 +1,7 @@
 import "./App.css";
 import "./styles.css";
 import Editor from "./Editor";
+import Home from "./Home";
 import {
   BrowserRouter as Router,
   Routes,
@@ -13,10 +14,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route
+        <Route path="/" element={<Home />} />
+        <Route path="/docs/:id" element={<Editor />} />
+        {/* <Route
           path="/"
           element={<Navigate replace to={`/docs/${uuidV4()}`} />}
-        />
+        /> */}
         <Route path="/docs/:id" element={<Editor />} />
       </Routes>
     </Router>
