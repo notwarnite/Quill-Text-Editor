@@ -1,36 +1,42 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* styles.css */
 
 body {
-  background-color: #f3f3f3;
-  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* light gray background */
+  color: #212529; /* black text */
 }
 
-.container .ql-editor {
-  width: 8.5in;
-  min-height: 11in;
-  padding: 1in;
-  margin: 1rem;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-  background-color: white;
+.container {
+  margin: 40px;
 }
 
-.container .ql-container.ql-snow {
-  border: none;
-  display: flex;
-  justify-content: center;
+.ql-editor {
+  background-color: #fff; /* white editor background */
+  border: 1px solid #ced4da; /* light gray border */
+  border-radius: 5px;
+  min-height: 100vh; /* Set the min-height to your desired default height */
+  overflow-y: auto; /* Add vertical scrollbar if content exceeds max-height */
+  padding: 10px;
 }
 
-.container .ql-toolbar.ql-snow {
-  display: flex;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: #f3f3f3;
-  border: none;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+.ql-toolbar {
+  background-color: #e9ecef; /* light gray toolbar background */
+  border: 1px solid #ced4da; /* light gray border */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.ql-toolbar button {
+  background-color: #fff; /* white button background */
+  border: 1px solid #ced4da; /* light gray border */
+  border-radius: 3px;
+  color: #495057; /* dark gray text */
+  cursor: pointer;
+  margin: 2px;
+  padding: 5px 10px;
+}
+
+.ql-toolbar button:hover {
+  background-color: #f8f9fa; /* light gray background on hover */
 }

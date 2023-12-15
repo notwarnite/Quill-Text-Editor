@@ -10,7 +10,17 @@ import {
 import { v4 as uuidV4 } from "uuid";
 
 function App() {
-  return <Editor />;
+  return (
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={<Navigate replace to={`/docs/${uuidV4()}`} />}
+        />
+        <Route path="/docs/:id" element={<Editor />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
